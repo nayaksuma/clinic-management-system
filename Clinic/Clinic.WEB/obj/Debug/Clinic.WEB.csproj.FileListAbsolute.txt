@@ -1,0 +1,157 @@
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\Clinic.WEB.dll.config
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\Clinic.WEB.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\Clinic.WEB.pdb
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\csc.exe
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\csc.exe.config
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\csc.rsp
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\csi.exe
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\csi.exe.config
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\csi.rsp
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.AppContext.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Collections.Immutable.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Console.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Globalization.Calendars.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.IO.Compression.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.IO.FileSystem.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Net.Http.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Net.Sockets.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Reflection.Metadata.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.ValueTuple.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Xml.XPath.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\vbc.exe
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\vbc.exe.config
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\vbc.rsp
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\VBCSCompiler.exe
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\roslyn\VBCSCompiler.exe.config
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\Antlr3.Runtime.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\Microsoft.Web.Infrastructure.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\Newtonsoft.Json.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.Helpers.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.Mvc.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.Optimization.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.Razor.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.WebPages.Deployment.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.WebPages.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.WebPages.Razor.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\WebGrease.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.Helpers.xml
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.Mvc.xml
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.Optimization.xml
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.Razor.xml
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.WebPages.xml
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.WebPages.Deployment.xml
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\System.Web.WebPages.Razor.xml
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\Newtonsoft.Json.xml
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\Antlr3.Runtime.pdb
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\obj\Debug\Clinic.WEB.csproj.CoreCompileInputs.cache
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\obj\Debug\Clinic.WEB.csproj.CopyComplete
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\obj\Debug\Clinic.WEB.dll
+D:\Yesh_Works\MPMC2022\Clinic\Clinic.WEB\obj\Debug\Clinic.WEB.pdb
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\Clinic.WEB.dll.config
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\Clinic.WEB.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\Clinic.WEB.pdb
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\csc.exe
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\csc.exe.config
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\csc.rsp
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\csi.exe
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\csi.exe.config
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\csi.rsp
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\Microsoft.Managed.Core.targets
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.AppContext.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Collections.Immutable.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Console.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Globalization.Calendars.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.IO.Compression.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.IO.FileSystem.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Net.Http.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Net.Sockets.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Reflection.Metadata.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.ValueTuple.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Xml.XmlDocument.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Xml.XPath.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\vbc.exe
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\vbc.exe.config
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\vbc.rsp
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\VBCSCompiler.exe
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\roslyn\VBCSCompiler.exe.config
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\Antlr3.Runtime.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\Microsoft.Web.Infrastructure.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\Newtonsoft.Json.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.Helpers.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.Mvc.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.Optimization.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.Razor.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.WebPages.Deployment.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.WebPages.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.WebPages.Razor.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\WebGrease.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.Helpers.xml
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.Mvc.xml
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.Optimization.xml
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.Razor.xml
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.WebPages.xml
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.WebPages.Deployment.xml
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\System.Web.WebPages.Razor.xml
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\Newtonsoft.Json.xml
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\Antlr3.Runtime.pdb
+C:\SAS Clinic\Clinic\Clinic.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\SAS Clinic\Clinic\Clinic.WEB\obj\Debug\Clinic.WEB.csproj.AssemblyReference.cache
+C:\SAS Clinic\Clinic\Clinic.WEB\obj\Debug\Clinic.WEB.csproj.CoreCompileInputs.cache
+C:\SAS Clinic\Clinic\Clinic.WEB\obj\Debug\Clinic.WEB.csproj.CopyComplete
+C:\SAS Clinic\Clinic\Clinic.WEB\obj\Debug\Clinic.WEB.dll
+C:\SAS Clinic\Clinic\Clinic.WEB\obj\Debug\Clinic.WEB.pdb

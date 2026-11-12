@@ -1,0 +1,108 @@
+﻿@model IEnumerable<Clinic.WEB.Models.DoctorModel>
+<!-- ======= Doctors Section ======= -->
+<section id="doctors" class="doctors">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Doctors</h2>
+            <p>Doctors all over the world are given the stature next to God. It happens so mostly because they are lifesavers who work tirelessly for mankind. Moreover, being a doctor is considered one of the most sought-after professions. People want their kids to become doctors and they instill this dream in them from an early age.</p>
+        </div>
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4 mt-4">
+                   
+                        @if (item.Photo == null)
+                        {
+                            <h4>
+                                No Photo Found in the records,
+                                Please upload Photo
+                            </h4>
+                        }
+                        else
+                        {
+                            string base64String = Convert.ToBase64String(item.Photo, 0, item.Photo.Length);
+                            <img src="data:image/png;base64,@base64String"
+                                 alt="@item.Name" class="card-img-top" />
+                        }
+
+                        <h4>@item.Name</h4>
+                        <span>@item.Specialisation</span>
+                        <p>@item.Department, @item.Qualification</p>
+
+                  
+                </div>
+            }
+        </div>
+    </div>
+</section><!-- End Doctors Section -->
+<div class="card">
+    <div class="card-body">
+
+        <div class="row">
+            <div class="col-12">&nbsp;</div>
+        </div>
+        <div class="row">
+            <div class="col-12">&nbsp;</div>
+        </div>
+        <table class="table table-sm table-bordered table-striped table-responsive">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Specialisation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Department)
+                </th>
+
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Specialisation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Department)
+                    </td>
+
+                    <td>
+
+                        @Html.ActionLink("Details", "DoctorDetails", new { id = item.ID }, new { @class = "btn btn-outline-secondary btn-sm" })
+
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+
+
+
+
+
+

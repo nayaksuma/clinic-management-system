@@ -1,0 +1,100 @@
+﻿@model Clinic.WEB.ViewModel.DoctorVisitViewModel
+@section styles
+    {
+    @*@Styles.Render("~/Content/bootstrapdate")*@
+}
+@{
+    SelectList doclist = new SelectList(Model.DoctorsList, "Id", "Name");
+    SelectList patlist = new SelectList(Model.PatientsList, "Id", "Name");
+}
+
+<div class="card">
+    <div class="card-header">
+        <h2> @User.Identity.Name: Doctor's Appointment</h2>
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-7 text-end">
+                @Html.ActionLink("Back", "Index", "Home", null, new { @class = "btn btn-outline-info" })
+            </div>
+        </div>
+
+    </div>
+    <div class="card-body">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            
+            <div class="row">
+                <div class="col-md-2">
+                    Doctor
+                </div>
+                <div class="col-md-5">
+                    @Html.DropDownListFor(M => M.DoctorID, new SelectList(doclist, "Value", "Text"), htmlAttributes: new { @class = "form-control" })
+                    @Html.HiddenFor(model => model.DoctorID)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.Symptoms, htmlAttributes: new { @class = "control-label " })
+                </div>
+                <div class="col-md-5">
+                    @Html.EditorFor(model => model.Symptoms, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Symptoms, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2  ">
+                    @Html.LabelFor(model => model.Dateofbooking, htmlAttributes: new { @class = "control-label " })
+                </div>
+                <div class="col-md-5">
+                    @Html.EditorFor(model => model.Dateofbooking, new { htmlAttributes = new { @class = "form-control datepicker_input " } })
+                    @Html.ValidationMessageFor(model => model.Dateofbooking, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    &nbsp;
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Book" class="btn btn-outline-info" />
+                </div>
+            </div>
+        }
+    </div>
+</div>
+@section scripts
+{
+    @*@Scripts.Render("~/bundles/bootstrapdate")*@
+    <script type="text/javascript">
+        function onlyNumberKey(evt) {
+
+            // Only ASCII character in that range allowed
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                return false;
+            return true;
+        }
+    </script>
+}
+
+
+

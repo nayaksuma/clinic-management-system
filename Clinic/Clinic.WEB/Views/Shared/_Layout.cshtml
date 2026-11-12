@@ -1,0 +1,177 @@
+﻿@{
+    string toastrMessage = "";
+    if (Session["Toastr"] != null)
+    {
+        if (Session["Toastr"].ToString().Length > 0)
+        {
+            toastrMessage = Session["Toastr"].ToString();
+            Session["Toastr"] = "";
+        }
+    }
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1">
+    <title>Hello, SAS Clinic</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    @Styles.Render("~/content/css")
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+        <div class="container d-flex justify-content-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">Contact No</a>
+                <i class="bi bi-phone"></i> +1 5589 55488 55
+            </div>
+            <div class="d-none d-lg-flex social-links align-items-center">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="/home">SAS Clinic</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link " href="/Home">Home</a></li>
+                    <li><a class="nav-link " href="/Home/About">About</a></li>
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li><a class="nav-link " href="/Home/Patient">Patient</a></li>
+                    }
+                    <li><a class="nav-link " href="/Home/Doctor">Doctor</a></li>
+                    @if (User.IsInRole("User"))
+                    {
+                        <li class="dropdown">
+                            <a href="#"><span>Transaction</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a class="nav-link " href="/Patient/DoctorVisit"><span class="d-none d-md-inline">Make an Appointment</span></a></li>
+                                <li><a class="nav-link " href="/Patient/PrescribeTestList">Prescribed Test List</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link " href="/Patient/PatientProfile"><span class="d-none d-md-inline">Profile</span></a></li>
+                        <li><a class="nav-link " href="/Patient/Appoinment"><span class="d-none d-md-inline">Appoinment</span></a></li>
+                    }
+                    @if (User.IsInRole("Doctor"))
+                    {
+                        <li><a class="nav-link " href="/Patient/DoctorVisitEntry"><span class="d-none d-md-inline">Patient</span> Entry</a></li>
+                        @*<li><a class="nav-link " href="/Patient/PrescribedTest"><span class="d-none d-md-inline">Prescribe</span> Test</a></li>*@
+                        <li><a class="nav-link " href="/Doctor/DoctorProfile"><span class="d-none d-md-inline">Profile</span></a></li>
+                    }
+                    @if (User.IsInRole("SuperAdmin"))
+                    {
+                        <li class="dropdown">
+                            <a href="#"><span>Appoinment</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="/Patient/ConfirmDoctorVisit">ConfirmDoctorVisit</a></li>
+                                <li><a href="/Receptionist/RejectedList">Rejected List</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link " href="/Receptionist/ReceptionistProfile"><span class="d-none d-md-inline">Profile</span></a></li>
+                        <li class="dropdown">
+                            <a href="#"><span>Admin</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="/Doctor">Doctor</a></li>
+                                <li><a href="/Patient">Patient</a></li>
+                                <li><a href="/Receptionist">Receptionist</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a href="/DoctorVisit">DoctorVisit</a></li>
+                                <li><a href="/LabTest">LabTest</a></li>
+                                <li><a href="/PrescribedTest">Precribed Test</a></li>
+                            </ul>
+                        </li>
+                    }
+                </ul>
+                <ul class="me-auto mb-2 mb-lg-0">
+                    @if (Request.IsAuthenticated)
+                    {
+                        using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                        {
+                            <li>
+                                <span class="m-r-sm text-muted welcome-message ">Hello @User.Identity.Name!</span>
+                            </li>
+                            <li>
+                                <a href="javascript:document.getElementById('logoutForm').submit()">  <i class="fa fa-sign-out "></i>Log out </a>
+                            </li>
+                        }
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            @Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Register", "Index", "Account", routeValues: null, htmlAttributes: new { @class = "nav-link" })
+                        </li>
+                    }
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+
+        </div>
+    </header><!-- End Header -->
+
+    <div style="height: 25vh;">
+    </div>
+
+
+
+    <main id="main">
+        <div class="container ">
+            @RenderBody()
+        </div>
+    </main>
+    <div class="row">
+        <div class="col-12">&nbsp;</div>
+    </div>
+    <div class="top-">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap" /></svg>
+                </a>
+                <span class="text-muted">&copy; 2022 SAS Clinic</span>
+            </div>
+        </footer>
+
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 101">
+            <div id="liveToast" class="toast bg-info" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Wait...</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    @toastrMessage
+                </div>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/Bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    @if (toastrMessage.Trim().Length > 0)
+    {
+        <script type="text/javascript">
+            var toastLiveExample = document.getElementById('liveToast')
+            var toast = new bootstrap.Toast(toastLiveExample)
+            toast.show()
+
+        </script>
+    }
+
+</body>
+</html>

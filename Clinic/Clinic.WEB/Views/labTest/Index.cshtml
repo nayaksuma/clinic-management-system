@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Clinic.WEB.Models.LabTestModel>
+
+<div class="card"> 
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Lab Test List</h4>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-outline-info" })
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table  table-sm table-bordered table-striped table-responsive">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TestName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InhouseTest)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fees)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TestName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InhouseTest)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fees)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-outline-warning btn-sm" }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-outline-secondary btn-sm" }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-outline-danger btn-sm" })
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="card-footer">
+        SAS Clinic
+    </div>
+</div>
+
+
+
+

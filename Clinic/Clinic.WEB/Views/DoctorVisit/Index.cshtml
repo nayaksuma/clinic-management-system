@@ -1,0 +1,105 @@
+﻿@model IEnumerable<Clinic.WEB.Models.DoctorVisitModel>
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Doctor Visit List</h4>
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-md table-bordered table-striped table-responsive">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DoctorID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PatientID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Date)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Symptoms)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Precripation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Payment)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.VisitDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Dateofbooking)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ResultDate)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DoctorID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PatientID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Symptoms)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Precripation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Payment)
+                    </td>
+                    <th>
+                        @Html.DisplayFor(modelItem => item.VisitDate)
+                    </th>
+                    <th>
+                        @Html.DisplayFor(modelItem => item.Dateofbooking)
+                    </th>
+                    <th>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </th>
+                    <th>
+                        @Html.DisplayFor(modelItem => item.ResultDate)
+                    </th>
+                    @*<td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-outline-warning btn-sm" })
+                    </td>*@
+                    <td>
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-outline-secondary btn-sm" })
+                    </td>
+                    <td>
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-outline-danger btn-sm" })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    <div class="card-footer">
+        SAS Clinic
+    </div>
+</div>
+
+
+
+
+

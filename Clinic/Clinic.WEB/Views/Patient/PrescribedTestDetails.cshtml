@@ -1,0 +1,108 @@
+﻿@model Clinic.WEB.ViewModel.PrescribedTestViewModel
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Report</h4>
+            </div>
+            <div class="col-md-6 text-end">
+               
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                @Html.DisplayNameFor(model => model.PatientID)
+            </div>
+            <div class="col-md-6">
+                @Html.DisplayFor(model => model.PatientID)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                @Html.DisplayNameFor(model => model.TestID)
+            </div>
+            <div class="col-md-6">
+                @Html.DisplayFor(model => model.TestID)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                @Html.DisplayNameFor(model => model.DoctorID)
+            </div>
+            <div class="col-md-6">
+                @Html.DisplayFor(model => model.DoctorID)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                @Html.DisplayNameFor(model => model.Fees)
+            </div>
+            <div class="col-md-6">
+                @Html.DisplayFor(model => model.Fees)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                @Html.DisplayNameFor(model => model.Date)
+            </div>
+            <div class="col-md-6">
+                @Html.DisplayFor(model => model.Date)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                @Html.DisplayNameFor(model => model.Result)
+            </div>
+            <div class="col-md-6">
+                @Html.DisplayFor(model => model.Result)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+    <div class="card-footer">
+        <p>
+            @Html.ActionLink("Back to List", "Index","Home", null, new { @class = "btn btn-outline-info" })
+        </p>
+    </div>
+</div>
+
+
+
+

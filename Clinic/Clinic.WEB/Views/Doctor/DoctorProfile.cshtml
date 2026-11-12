@@ -1,0 +1,341 @@
+﻿@model Clinic.WEB.Models.DoctorModel
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Doctor</h4>
+                </div>
+                <div class="col-md-6 text-end">
+                    @Html.ActionLink("Back to List", "Index", "Home", null, new { @class = "btn btn-outline-info" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        @using (Html.BeginForm("Edit", "Doctor", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.ID)
+            <div class="row">
+                <div class="col-md-3">
+                    @if (Model.Photo == null)
+                    {
+                        <h4>
+                            No Photo Found in the records,
+                            Please upload Photo
+                        </h4>
+                    }
+                    else
+                    {
+                        string base64String = Convert.ToBase64String(Model.Photo, 0, Model.Photo.Length);
+                        <img src="data:image/png;base64,@base64String"
+                             alt="@Model.Name" class="img-fluid" />
+                    }
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-3 text-md-end">
+                                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label" })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="row">
+                            <div class="col-md-3 text-md-end">
+                                @Html.LabelFor(model => model.DOB, htmlAttributes: new { @class = "control-label " })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.DOB, new { htmlAttributes = new { @class = "datepicker_input form-control" } })
+                                @Html.ValidationMessageFor(model => model.DOB, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-3 text-md-end ">
+                                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label " })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="row">
+                            <div class="col-md-3 text-md-end ">
+                                @Html.LabelFor(model => model.Mobile, htmlAttributes: new { @class = "control-label " })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.Mobile, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return onlyNumberKey(event)" } })
+                                @Html.ValidationMessageFor(model => model.Mobile, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        &nbsp;
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-md-2 text-md-end">
+                        @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label 2" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        &nbsp;
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-3 text-md-end">
+                                @Html.LabelFor(model => model.Location, htmlAttributes: new { @class = "control-label " })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-3 text-md-end ">
+                                @Html.LabelFor(model => model.Landmark, htmlAttributes: new { @class = "control-label" })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.Landmark, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Landmark, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        &nbsp;
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-3 text-md-end ">
+                                @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "control-label " })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-3 text-md-end ">
+                                @Html.LabelFor(model => model.State, htmlAttributes: new { @class = "control-label " })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.State, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="row">
+                            <div class="col-md-3 text-md-end">
+                                @Html.LabelFor(model => model.Pincode, htmlAttributes: new { @class = "control-label " })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.Pincode, new { htmlAttributes = new { @class = "form-control", @onkeypress = "return onlyNumberKey(event)" } })
+                                @Html.ValidationMessageFor(model => model.Pincode, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="row">
+                            <div class="col-md-3 text-md-end">
+                                @Html.LabelFor(model => model.Department, htmlAttributes: new { @class = "control-label " })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.Department, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Department, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 text-md-end ">
+                        @Html.LabelFor(model => model.Qualification, htmlAttributes: new { @class = "control-label " })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Qualification, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Qualification, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 text-md-end ">
+                        @Html.LabelFor(model => model.Specialisation, htmlAttributes: new { @class = "control-label " })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Specialisation, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Specialisation, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        &nbsp;
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-3 text-md-end ">
+                                @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label" })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="row">
+                            <div class="col-md-3 text-md-end ">
+                                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label " })
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 bg-warning">
+                        Upload Photo
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">&nbsp;</div>
+                </div>
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="file"
+                                       accept=".jpg,.gif,.png,.jpeg"
+                                       name="doctorPhoto" id="doctorPhoto" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">&nbsp;</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <div class="card">
+                                    <img src="" id="theUploadedImage" class="img-fluid"
+                                         style="min-height:12rem;" alt="Choose a file to preview">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Save" class="btn btn-outline-info" />
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+@section scripts
+{
+    <script>
+        document.getElementById("doctorPhoto").onchange = function (event) {
+            var output = document.getElementById('theUploadedImage');
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.onload = function () {
+                URL.revokeObjectURL(output.src) // free memory
+            }
+        };
+    </script>
+    <script type="text/javascript">
+        function onlyNumberKey(evt) {
+
+            // Only ASCII character in that range allowed
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                return false;
+            return true;
+        }
+    </script>
+
+}
+
+
+

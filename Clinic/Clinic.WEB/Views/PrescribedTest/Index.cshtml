@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Clinic.WEB.Models.PrescribedTestModel>
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-8 ">
+                <h4>Report</h4>
+            </div>
+            <div class="col-md-4">
+                @*@Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-outline-info" })*@
+            </div>
+        </div>
+
+    </div>
+    <div class="card-body">
+        <table class="table table-sm table-bordered table-striped table-responsive">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.PatientID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TestID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DoctorID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fees)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Date)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Result)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PatientID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TestID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DoctorID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fees)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Result)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-outline-warning btn-sm" })
+                    </td>
+                    <td>
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-outline-secondary btn-sm" })
+                    </td>
+                    <td>
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID, }, new { @class = "btn btn-outline-danger btn-sm" })
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+    </div>
+    <div class="card-footer">
+        SAS Clinic
+    </div>
+</div>
+
+
+
+
